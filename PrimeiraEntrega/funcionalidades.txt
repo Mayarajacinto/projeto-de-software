@@ -1,0 +1,28 @@
+• Pesquisa de catálogo: Os usuários podem pesquisar o catálogo da biblioteca por título, autor, gênero, etc;
+    pesquisar livros 
+    filtar livros 
+• Empréstimo e devolução: os usuários podem verificar e devolver livros;
+    alugar livro 
+    devolver livro 
+• Sistema de Reservas: Os usuários podem reservar livros que estão atualmente emprestados;
+    reservar livro 
+• Notificações de atraso: Notificações automatizadas de itens vencidos;
+• Gestão de Membros: Cadastro e gestão de membros da biblioteca;
+    FEITO - cadastro de ADM e de usuários 
+    FEITO - status de membros 
+• Cálculo e Pagamento de Multas: Cálculo e pagamento de multas vencidas;
+• Gestão de Inventário: Acompanhamento e gestão do inventário da biblioteca;
+    FEITO - cadatro de livros 
+    FEITO - status de livros 
+• Gestão de Eventos: Agendamento e promoção de eventos da biblioteca;
+    FEITO - cadastro de evento 
+    pesquisa de eventos 
+    
+• E-books e Recursos Online: Acesso a recursos digitais e e-books;
+• Relatórios e análises: Geração de relatórios sobre o uso e tendências da biblioteca.
+
+comandos 
+APP - python manage.py startapp nome 
+    -> file models: classes, tabelas 
+
+models - criar file - nomear como models 

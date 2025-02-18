@@ -4,7 +4,7 @@ from .statusEvento import status
 class cadastrarEventos(models.Model):
     nome = models.CharField(max_length=100)
     data = models.DateFieldfield()
-    hora = models.TimeField()
+    horario = models.TimeField()
     local = models.CharField(max_length=100)
     descricao = models.TextField()
     status = models.ForeignKey(status, on_delete=models.DO_NOTHING)

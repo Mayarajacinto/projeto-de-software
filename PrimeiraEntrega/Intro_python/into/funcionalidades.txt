@@ -21,8 +21,34 @@
 • E-books e Recursos Online: Acesso a recursos digitais e e-books;
 • Relatórios e análises: Geração de relatórios sobre o uso e tendências da biblioteca.
 
-comandos 
-APP - python manage.py startapp nome 
-    -> file models: classes, tabelas 
 
-models - criar file - nomear como models 
+venv - ambiente vurtual 
+
+APP - pastas de divisão de épico
+    para criar: python manage.py startapp nome
+
+models - definição de tabelas  
+    para criar models models: nomo arquivo -> models 
+
+para preparar os models para ir pro banco de dados:
+    - python manage.py makemigrations
+    - python manage.py migrate
+
+para visualizar no "front" - manda dados dos models 
+    jason: criar nova pasta -> 'serializers' -> criar nova file 
+ 
+o banco de dados será alimentado por API 
+
+#para gerenciamento no banco - CRUD
+para fazer as views
+    Cria uma pasta dentro do pasta de gerenciamento -> 'views' 
+toda views vai ter os imports e class herdando dos models e 
+    queryset = 'nome do model'.objects.all()
+andpoint -> conexão para mexer no banco 
+    dentro da class viewset 
+    'localhost: 8000/'nome do que você quer fazer'
+    ex: localhost: 8000/register -> para cadastrar 
+
+
+toda vz que fizer uma nova pasta tem que fazer um file '__init__.py' e importar tudo
+    from .nomeDaPastaparaImportar import *

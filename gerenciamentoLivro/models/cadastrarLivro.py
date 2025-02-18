@@ -1,8 +1,8 @@
 from django.db import models
 from .statusLivro import status
     
-class cadastrarLivro(models.Model):
-    título = models.CharField(max_length=100)
+class livros(models.Model):
+    titulo =models.CharField(max_length=100)
     autor = models.CharField(max_length=100)
     editora = models.CharField(max_length=100)
     #importando a classe status, id estrangeiro da tabela status
@@ -11,25 +11,28 @@ class cadastrarLivro(models.Model):
     status = models.ForeignKey(status, on_delete=models.DO_NOTHING)
     
     class Meta:
-        db_table = 'cadastrarLivros'
+        db_table = 'livros'
         verbose_name = 'Livro'
         verbose_name_plural = 'Livros'
         
-class cadastrarRevista(models.Model):
+class revistas(models.Model):
     título = models.CharField(max_length=100)
     editora = models.CharField(max_length=100)
+    autor = models.CharField(max_length=100)
+    status = models.ForeignKey(status, on_delete=models.DO_NOTHING)
     
     class Meta:
-        db_table = 'cadastrarRevista'
+        db_table = 'revistas'
         verbose_name = 'Revista'
         verbose_name_plural = 'Revistas'
         
-class cadastrarArtigo(models.Model):
+class artigos(models.Model):
     título = models.CharField(max_length=100)
     autor = models.CharField(max_length=100)
+    status = models.ForeignKey(status, on_delete=models.DO_NOTHING)
     
     class Meta:
-        db_table = 'cadastrarArtigo'
+        db_table = 'artigos'
         verbose_name = 'Artigo'
         verbose_name_plural = 'Artigos'
         

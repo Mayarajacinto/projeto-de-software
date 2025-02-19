@@ -1,3 +1,3 @@
-from ..gerenciamentoLivro import cadastrarLivro
-from ..gerenciamentoLivro import statusLivro
+from ..gerenciamentoLivro import *
+from ..gerenciamentoLivro import *
 

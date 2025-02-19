@@ -49,6 +49,23 @@ andpoint -> conexão para mexer no banco
     'localhost: 8000/'nome do que você quer fazer'
     ex: localhost: 8000/register -> para cadastrar 
 
+Só depois de uma view pronta, que eu posso fazer um andpoint
 
 toda vz que fizer uma nova pasta tem que fazer um file '__init__.py' e importar tudo
     from .nomeDaPastaparaImportar import *
+
+usando o postman 
+    GET - pegar do BD
+    POST - colocar coisa no BD
+    PATCH - alterar algo existente 
+    DELETE - apagar 
+    
+status de resposta 
+    200 - ok
+    201 - conteudo criado ta ok 
+    400 -erro 
+    404 - não encontrado 
+    500 - erro na api
+
+pip install drf-yasg
+    comando para bdocumnetação interativa da API no formato swagger
